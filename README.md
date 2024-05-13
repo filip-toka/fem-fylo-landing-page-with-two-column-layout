@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/filip-toka/fem-news-homepage)
-- Live Site URL: [Live site URL](https://filip-toka.github.io/fem-news-homepage)
+- Solution URL: [Solution URL](https://github.com/filip-toka/fem-fylo-landing-page-with-two-column-layout)
+- Live Site URL: [Live site URL](https://filip-toka.github.io/fem-fylo-landing-page-with-two-column-layout)
 
 ## My process
 
