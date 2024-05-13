@@ -1,0 +1,21 @@
+.primary-navigation {
+    display: flex;
+    gap: 1rem;
+    font-size: .9rem;
+
+    &__link {
+        color: var(--color-desaturated-blue);
+        font-weight: 600;
+
+        &:hover {
+            color: var(--color-very-dark-blue);
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .primary-navigation {
+        display: flex;
+        gap: 3rem;
+    }
+}

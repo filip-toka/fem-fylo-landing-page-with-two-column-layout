@@ -1,0 +1,79 @@
+@use "sass:color";
+
+input {
+    border: 1px solid #000;
+    border-radius: 3px;
+    width: 100%;
+    padding: 1rem;
+
+    &::placeholder {
+        color: rgba(#000, 0.4);
+    }
+}
+
+.signup-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    &__input {
+        position: relative;
+        width: 100%;
+
+        .error-message {
+            font-size: 14px;
+            color: red;
+            position: absolute;
+            left: 0;
+            top: -25px;
+        }
+    }
+
+    &__button {
+        width: 100%;
+    }
+}
+
+.signup-form--secondary {
+    margin: 0 auto;
+    max-width: 80%;
+
+    &__input {
+        position: relative;
+        width: 100%;
+
+        .error-message {
+            color: #fff;
+            position: absolute;
+            left: 0;
+            bottom: -30px;
+        }
+    }
+}
+
+.error {
+    border: 1px solid red;
+}
+
+@media screen and (min-width: 769px) {
+    .signup-form {
+
+        &__input {
+            width: 50%;
+
+            .error-message {               
+                top: 55px;
+            }
+        }
+    
+        &__button {
+            width: 180px;
+        }
+    }
+
+    .signup-form--secondary {
+        margin: 0;
+        max-width: 100%;
+    }
+}

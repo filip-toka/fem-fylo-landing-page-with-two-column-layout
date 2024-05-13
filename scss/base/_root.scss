@@ -1,0 +1,10 @@
+@use "../abstracts/variables";
+
+:root {
+    @each $name, $clr in variables.$colors {
+        --color-#{$name}: #{$clr};
+    }
+
+    --font-open-sans: "Open Sans", sans-serif;
+    --font-raleway: "Raleway", sans-serif;
+}

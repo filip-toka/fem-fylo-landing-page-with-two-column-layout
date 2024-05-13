@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; color: var(--color-light-gray);}
+    .attribution a { color: var(--color-light-grayish-blue); text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+  <header class="wrapper wrapper--header">
+    <img src="images/logo.svg" alt="Fylo Logo">
+    <nav aria-label="Primary navigation">
+      <ul class="primary-navigation">
+        <li>
+          <a href="#" class="primary-navigation__link">Features</a>
+        </li>
+        <li>
+          <a href="#" class="primary-navigation__link">Team</a>
+        </li>
+        <li>
+          <a href="#" class="primary-navigation__link">Sign In</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section>
+      <div class="wrapper">
+        <div class="row row--ai-center">
+          <div class="col-6">
+            <img src="images/illustration-1.svg" alt="Illustration 1" aria-hidden="true">
+          </div>
+          <div class="col-6 col-6--lg-first text-center-sm">
+            <h1>All your files in one secure location, accessible anywhere.</h1>
+
+            <p>Fylo stores your most important files in one secure location. 
+            Access them wherever you need, share and collaborate with friends, 
+            family, and co-workers.</p>
+
+            <form action="" class="signup-form">
+              <div class="signup-form__input">
+                <!-- 
+                  type email together with required is an easy option to validate email without JS. 
+                  In this example, the input type is text and not required to validate it via JS.
+                -->
+                <input type="text" name="email" id="email" value="" placeholder="Enter your email...">
+                <span class="error-message"></span>
+              </div>
+              <button class="btn btn--primary signup-form__button">Get Started</button>
+            </form>
+          </div>
+        </div>
+      </div> 
+    </section>   
+
+    <section class="bg-curved">
+      <div class="curve"></div>
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-6">
+            <img src="images/illustration-2.svg" alt="Illustration 2" aria-hidden="true">
+          </div>
+          <div class="col-6 col-6--lg-first">
+            <h2 class="text-center-sm">Stay productive, wherever you are</h2>
+
+            <p>Never let location be an issue when accessing your files. Fylo has you 
+              covered for all of your file storage needs.</p>
+
+            <p>Securely share files and folders with friends, family and colleagues for 
+              live collaboration. No email attachments required!</p>
+
+            <a href="#" class="btn btn--secondary">See how Fylo works <img src="images/icon-arrow.svg" alt="" aria-hidden="true" class="btn--secondary__icon"></a>
+
+            <blockquote class="testimonial">
+              <img src="images/icon-quotes.svg" alt="" aria-hidden="true">
+              <p class="testimonial__text">
+                Fylo has improved our team productivity by an order of magnitude. Since 
+                making the switch our team has become a well-oiled collaboration machine.
+              </p>
+              <footer class="testimonial__author">
+                <img src="images/avatar-testimonial.jpg" alt="Kyle Burton photo" class="testimonial__author--avatar">             
+                <div>
+                  <cite class="testimonial__author--name">Kyle Burton</cite>
+                  Founder & CEO, Huddle
+                </div>
+              </footer>
+            </blockquote>
+          </div>         
+        </div> 
+      </div>
+    </section>
+
+    <section class="bg-desaturated-blue">
+      <div class="wrapper">
+        <div class="row text-center-sm">
+          <div class="col-6">
+            <h3>Get early access today</h3>
+            <p>It only takes a minute to sign up and our free starter tier is extremely generous. 
+              If you have any questions, our support team would be happy to help you.</p>
+          </div>
+          <div class="col-6">
+            <form action="" class="signup-form signup-form--secondary">
+              <div class="signup-form--secondary__input">
+                <!-- 
+                  type email together with required is an easy option to validate email without JS 
+                  In this example i used type email together with required to validate it without JS.
+                -->
+                <input type="email" name="email" id="email-form-secondary" value="" class="signup-form--secondary__input" placeholder="email@example.com" required>
+              </div>
+              <button class="btn btn--primary signup-form__button">
+                Get Started For Free
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrapper wrapper--footer">
+      <svg width="166" height="49" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="footer-logo" aria-hidden="true"><defs><path id="a" d="M.014.03h93.96v48.29H.015z"/></defs><g fill="none" fill-rule="evenodd"><path d="M0 14.13v.123l27.95 13.13L56 14.209v-.033L27.95 1 0 14.13zm10.077.062L27.95 5.795l17.877 8.397-17.877 8.396-17.874-8.396zM27.95 32.483L0 19.55v4.784l27.95 12.964L56 24.289v-4.784L27.95 32.483zm0 9.703L0 29.25v4.783L27.95 47 56 33.99v-4.784l-28.05 12.98z" fill="#BDBAFA"/><g transform="translate(72)"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><path d="M87.56 24.152a8.1 8.1 0 0 0-2.161-5.573 7.259 7.259 0 0 0-2.34-1.673 6.864 6.864 0 0 0-2.85-.601c-1.01 0-1.961.2-2.852.601a7.257 7.257 0 0 0-2.34 1.673 8.102 8.102 0 0 0-2.16 5.574 8.102 8.102 0 0 0 2.16 5.573 7.257 7.257 0 0 0 2.34 1.672 6.864 6.864 0 0 0 2.851.602c1.01 0 1.96-.2 2.852-.602a7.259 7.259 0 0 0 2.339-1.672 8.1 8.1 0 0 0 2.16-5.574zm6.415 0c0 1.932-.357 3.723-1.07 5.373a13.098 13.098 0 0 1-2.94 4.28c-1.247 1.205-2.71 2.156-4.388 2.854-1.678.699-3.468 1.048-5.369 1.048-1.9 0-3.683-.349-5.346-1.048a13.863 13.863 0 0 1-4.366-2.876 13.351 13.351 0 0 1-2.94-4.302c-.713-1.65-1.07-3.426-1.07-5.329 0-1.873.364-3.634 1.092-5.284a13.92 13.92 0 0 1 2.962-4.325 13.671 13.671 0 0 1 4.367-2.898 13.552 13.552 0 0 1 5.301-1.048c1.901 0 3.69.35 5.369 1.048 1.678.698 3.14 1.65 4.388 2.854 1.248 1.204 2.228 2.638 2.94 4.302.713 1.665 1.07 3.449 1.07 5.351zM64.258 36.905a8.6 8.6 0 0 1-1.715.58c-.638.148-1.3.222-1.982.222a9.84 9.84 0 0 1-2.74-.379 6.003 6.003 0 0 1-2.295-1.226c-.653-.565-1.173-1.3-1.56-2.207-.385-.907-.578-2-.578-3.277V.029h6.549v29.474c0 1.07.215 1.806.646 2.207.43.401.943.602 1.537.602.742 0 1.455-.223 2.138-.669v5.262zM50.492 11.22L38.908 41.854c-.861 2.289-1.99 3.939-3.386 4.95-1.396 1.01-3.06 1.515-4.99 1.515-.297 0-.623-.022-.98-.066a7.352 7.352 0 0 1-1.025-.201l-2.138-5.975a8.486 8.486 0 0 0 1.56.557c.534.134 1.039.201 1.514.201 1.01 0 1.93-.23 2.762-.691.832-.46 1.47-1.315 1.916-2.564l.891-2.586-9.935-25.773h6.995l5.925 16.588 5.57-16.588h6.905zM23.538 7.342H6.786v8.294h16.529v5.618H6.785v15.784H.015V1.412h23.524v5.93z" fill="#000" mask="url(#b)"/></g></g></svg>
+      <div class="row row--footer">
+        <div class="col-3">
+          <ul class="list-footer">
+            <li class="list-footer__contact">
+              <img src="images/icon-phone.svg" alt="" aria-hidden="true" width="18" height="18"> 
+              <a href="tel:+15431234567" class="list-footer__link">Phone: +1-543-123-4567</a>
+            </li>
+            <li class="list-footer__contact">
+              <img src="images/icon-email.svg" alt="" aria-hidden="true" width="18" height="18"> 
+              <a href="mailto:example@fylo.com" class="list-footer__link">example@fylo.com</a>
+            </li>
+          </ul>        
+        </div>
+      
+        <div class="col-3">
+          <ul class="list-footer">
+            <li>
+              <a href="#" class="list-footer__link">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="list-footer__link">Jobs</a>
+            </li>
+            <li>
+              <a href="#" class="list-footer__link">Press</a>
+            </li>
+            <li>
+              <a href="#" class="list-footer__link">Blog</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="col-3">
+          <ul class="list-footer">
+            <li>
+              <a href="#" class="list-footer__link">Contact Us</a>
+            </li>
+            <li>
+              <a href="#" class="list-footer__link">Terms</a>
+            </li>
+            <li>
+              <a href="#" class="list-footer__link">Privacy</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-3 text-center-sm">
+          <ul class="social-icons">
+            <li>
+              <a href="#" class="social-icons__link" aria-label="Link to Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="social-icons__icon" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-icons__link" aria-label="Link to Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="social-icons__icon" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-icons__link" aria-label="Link to Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="social-icons__icon" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+    
+      </div>
+
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.frontendmentor.io/profile/filip-toka" target="_blank">Filip Kaprál</a>.
+      </p>
+    </div>
+  </footer>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
